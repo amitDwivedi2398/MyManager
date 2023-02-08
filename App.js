@@ -1,18 +1,17 @@
-import React, { useEffect } from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
+import {NavigationContainer} from '@react-navigation/native';
+import ThemeOneStack from './src/themeOne/navigation/ThemeOneStack';
 
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();
-  }, [])
+  }, []);
   return (
-    <View>
-      <Text>Amit</Text>
-    </View>
+    <NavigationContainer>
+      <ThemeOneStack />
+    </NavigationContainer>
   );
-}
-
-const styles = StyleSheet.create({})
+};
 
 export default App;
