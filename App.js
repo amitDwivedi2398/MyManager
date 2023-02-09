@@ -1,7 +1,12 @@
-import React, {useEffect} from 'react';
+
+import React, { useEffect } from 'react';
+import { View, StyleSheet, Text } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import {NavigationContainer} from '@react-navigation/native';
-import ThemeOneStack from './src/themeOne/navigation/ThemeOneStack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import MainStack from './src/mainTheem/navigation/MainStack';
+
+
 
 const App = () => {
   useEffect(() => {
@@ -9,8 +14,9 @@ const App = () => {
   }, []);
   return (
     <NavigationContainer>
-      <ThemeOneStack />
-    </NavigationContainer>
+    <MainStack />
+    {/* <ThemeOneStack /> */}
+  </NavigationContainer>
   );
 };
 

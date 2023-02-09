@@ -11,7 +11,8 @@ export default function InputField({
   value,
   onChangeText,
   color,
-  pcolor,
+  placeholderTextColor,
+  autoComplete
 }) {
   return (
     <View
@@ -29,8 +30,9 @@ export default function InputField({
         color={color}
         onChangeText={onChangeText}
           placeholder={label}
-          placeholderTextColor={pcolor}
+          placeholderTextColor={placeholderTextColor}
           keyboardType={keyboardType}
+          autoComplete={autoComplete}
           style={{flex: 1, paddingVertical: 0}}
           secureTextEntry={true}
         />
@@ -40,7 +42,7 @@ export default function InputField({
         color={color}
         onChangeText={onChangeText}
           placeholder={label}
-          placeholderTextColor={pcolor}
+          placeholderTextColor={placeholderTextColor}
           keyboardType={keyboardType}
           style={{flex: 1, paddingVertical: 0}}
         />
