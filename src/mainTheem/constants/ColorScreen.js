@@ -17,6 +17,8 @@ export const colors = {
   sceneBg: '#04567f',
   screenBg: '#05294a',
   screenBgMain: '#4584FF',
+  dark: '#ff4c98',
+    light: '#f8c907',
 }
 
 export const constant = {
